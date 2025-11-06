@@ -5,7 +5,7 @@ import com.twd.technicaltest.domain.repository.HotelRepository;
 import com.twd.technicaltest.infrastructure.entity.HotelEntity;
 import com.twd.technicaltest.infrastructure.mappers.HotelPersistenceMapper;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

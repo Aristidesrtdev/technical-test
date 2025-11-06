@@ -1,7 +1,6 @@
 package com.twd.technicaltest.presentation.controller;
 
 import com.twd.technicaltest.infrastructure.security.JwtTokenProvider;
-import com.twd.technicaltest.infrastructure.security.UserDetailsServiceImpl;
 import com.twd.technicaltest.presentation.dto.request.LoginRequestDTO;
 import com.twd.technicaltest.presentation.dto.response.LoginResponseDTO;
 import lombok.RequiredArgsConstructor;
