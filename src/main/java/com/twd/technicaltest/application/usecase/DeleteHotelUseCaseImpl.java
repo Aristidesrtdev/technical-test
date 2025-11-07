@@ -13,7 +13,7 @@ public class DeleteHotelUseCaseImpl implements DeleteHotelUseCase {
 
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Long id) {
         if(!hotelRepository.existById(id)){
             throw new EntityNotFoundException("Hotel with id " + id + " not found");
         }

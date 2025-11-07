@@ -22,7 +22,7 @@ public class UpdateHotelAddressUseCaseImpl implements UpdateHotelAddressUseCase 
 
 
     @Override
-    public HotelResponseDTO updateAddress(Integer id, AddressRequestDTO addressRequestDTO) {
+    public HotelResponseDTO updateAddress(Long id, AddressRequestDTO addressRequestDTO) {
 
         Hotel existingHotel = hotelRepository.findById(id);
 

@@ -43,9 +43,9 @@ public class HotelRepositoryImpl implements HotelRepository {
     }
 
     @Override
-    public Hotel findById(Integer id) {
+    public Hotel findById(Long id) {
 
-        HotelEntity hotelEntity = jpaRepository.findById(id)
+        HotelEntity hotelEntity = jpaRepository.findById(id.intValue())
                 .orElseThrow(() -> new EntityNotFoundException("Not found Hotel with id: " + id));
 
         return hotelPersistenceMapper.toModel(hotelEntity);
@@ -62,12 +62,12 @@ public class HotelRepositoryImpl implements HotelRepository {
     }
 
     @Override
-    public void delete(Integer id) {
-        jpaRepository.deleteById(id);
+    public void delete(Long id) {
+        jpaRepository.deleteById(id.intValue());
     }
 
     @Override
-    public boolean existById(Integer id) {
-        return jpaRepository.existsById(id);
+    public boolean existById(Long id) {
+        return jpaRepository.existsById(id.intValue());
     }
 }

@@ -54,7 +54,7 @@ public class HotelController {
 
     @PutMapping("/{id}/address")
     public ResponseEntity<HotelResponseDTO> updateAddress(
-            @PathVariable Integer id,
+            @PathVariable Long id,
             @Valid @RequestBody AddressRequestDTO addressRequestDTO) {
 
         HotelResponseDTO response = updateHotelAddressUseCase.updateAddress(id, addressRequestDTO);
@@ -63,7 +63,7 @@ public class HotelController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteHotel(@PathVariable Integer id) {
+    public ResponseEntity<Void> deleteHotel(@PathVariable Long id) {
 
         deleteHotelUseCase.delete(id);
 

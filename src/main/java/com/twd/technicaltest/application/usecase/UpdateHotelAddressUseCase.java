@@ -5,5 +5,5 @@ import com.twd.technicaltest.presentation.dto.response.HotelResponseDTO;
 
 public interface UpdateHotelAddressUseCase {
 
-    HotelResponseDTO updateAddress(Integer id, AddressRequestDTO addressRequestDTO);
+    HotelResponseDTO updateAddress(Long id, AddressRequestDTO addressRequestDTO);
 }

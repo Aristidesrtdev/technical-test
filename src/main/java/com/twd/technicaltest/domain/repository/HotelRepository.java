@@ -12,11 +12,11 @@ public interface HotelRepository {
 
     Page<Hotel> findAll(Optional<String> city, Pageable pageable);
 
-    Hotel findById(Integer id);
+    Hotel findById(Long id);
 
     Hotel updateAddress(Hotel existingHotel);
 
-    void delete(Integer id);
+    void delete(Long id);
 
-    boolean existById(Integer id);
+    boolean existById(Long id);
 }
